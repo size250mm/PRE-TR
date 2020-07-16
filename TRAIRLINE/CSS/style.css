@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+
+*{padding: 0; margin: 0; position: relative;
+font-family: 'Noto Sans KR', sans-serif;}
+img{}
+ol,ul,li{list-style: none;}
+a{cursor: pointer; text-decoration: none;}
+.head-bottom a{color: #fff;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+button{}
+input{}
+body{}
+
+/*--nikonsub--------------------------------------------*/
+.head{background: #000; width: 100%; height: 100vh; overflow: hidden; background: url(bg/TRhead.jpg); background-position: center center;
+background-size: cover;}
+.cont{width: 100%; background: #000;}
+.cont .line{width: 100%;}
+.cont1{height: 50vh; display: flex; justify-content: space-between; align-items: center;}
+.cont .copy-line{width: 1px; background: #000; height: 70%;}
+.cont .copy-box{height: 300px; padding: 10px;}
+.cont .copy-box .copy-container{width: 100%; padding: 10px;}
+.cont .copy-box .copy-container .box-copy-title{
+    font-size: 16px; font-weight: 500;
+}
+.cont .copy-box .copy-container p{color: #fff;}
+.cont .copy-box .copy-box-line{display: flex; justify-content: space-between;}
+.cont2-item img{width: 100%;}
+
+
+.right-probar{position: fixed; top: calc(50% - 25%); right: 0; height: 50%; width: 80px; z-index: 9000;}
+
+.right-probar .right-probar-group{width: 100%; height: 100%; display: flex; flex-direction: column; justify-items: center; justify-content: center;}
+.right-probar .right-probar-group .right-pro-base{height: 100%; width: 1px; background: #333; position: absolute; left: calc(50% - .5px); top: 0;}
+.right-probar .right-probar-group .right-pro-down{height: 0%; width: 3px; background: #fff; position: absolute; left: calc(50% - 1.5px); top: 0;}
+
+.sub-bottom{width: 100%; height: 100vh; background: url(
+bg/cgvhead.jpg); background-position: center center; background-size: cover; overflow: hidden;}
+.sub-bottom-group{width: 100%; height: 100%; padding: 0!important;}
+.sub-bottom .sub-left{width: 100%; height: 100%;}
+.sub-bottom .sub-box{width: 50%; height: 50%; z-index: 5000;}
+.sub-bottom .box1{background: #fe0000;}
+.sub-bottom .box2{background: #000;}
+
+.sub-bottom-group .text-group{width: 100%; height: 50%; position: absolute; top:calc(50% - 25%); left: calc(50% - 50%); z-index: 6000; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+.head-bottom{font-size: 200px; color: #fff; text-align: center; font-family: 'Roboto', sans-serif; font-weight: 700; top: 500px; z-index: 6000;}
+
+.start-text{width: 400px; height: 100px; line-height: 100px; position: absolute; bottom: 100px; z-index: 6000; left: calc(50% - 200px); opacity: .8; text-align: center; overflow: hidden;}
+.start-text p{font-size: 40px; color: #fff; text-align: center; font-family: 'Roboto', sans-serif; font-weight: 500; top: 100%;}
+.start-text p a{color: #fff;}
+.head-box{width: 70%; height: 10%; background: #2828CD; position: absolute; top: calc(50% - 5%); right: -100%;}
+
+.to-bottom{width: 100%; height: 50px; position: fixed; bottom: 10px; left:calc(50% - 50%); bottom: 10%; display: flex; justify-content: center; align-items: center; z-index: 9000;}
+.to-bottom span{width: 3px; height: 20px; background: #fff; display: block;}
+.to-bottom span:nth-last-child(1){transform: rotate(45deg) translate(7px,0);}
+.to-bottom span:nth-last-child(2){transform: rotate(-45deg) translate(-7px,0);}
+
+.on{
+animation-name: on;
+animation-direction: alternate;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+.off1{
+animation-name: off1;
+animation-direction: alternate;
+animation-duration: 1s;
+
+animation-fill-mode: forwards;
+}
+.off2{
+animation-name: off2;
+animation-direction: alternate;
+animation-duration: 1s;
+
+animation-fill-mode: forwards;
+}
+
+
+
+@keyframes on{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(20px);}
+}
+@keyframes off1{
+    0%{transform: rotate(-45deg) translate(0,0)}
+    100%{transform: rotate(90deg) translate(100px,-15px)}
+}
+@keyframes off2{
+    0%{transform: rotate(45deg) translate(0,0)}
+    100%{transform: rotate(90deg) translate(100px,15px)}
+}
+
+
+
+
+
+@media (max-width : 1000px){
+    .cont1 .container{display: flex; flex-direction: column;}
+    .cont1{height: 80vh;}
+    .totop a{font-size: 24px !important;}
+    .head-bottom{font-size: 50px;}
+}
+
+@media (max-width : 600px){
+    .cont1{height: 100vh;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
